@@ -1,0 +1,18 @@
+# course config files
+*.yaml
+
+# gradle
+.gradle/
+build
+
+
+# idea config
+.idea
+
+# old stages
+/BugBusters/*
+!/BugBusters/task/
+/BugBusters/task/*
+!/BugBusters/task/src
+!/BugBusters/task/result.txt
+!/BugBusters/task/data.txt
