@@ -100,8 +100,48 @@ public class WordMemorize {
     }
 
     void help() {
-        System.out.println("===================================================================================================================\n" + "Usage: COMMAND [<TYPE> PARAMETERS]\n" + "===================================================================================================================\n" + "General commands:\n" + "===================================================================================================================\n" + "/help - Display this help message\n" + "/menu - Return to the menu\n" + "\n" + "/add [<T> ELEMENT] - Add the specified element to the list\n" + "/remove [<int> INDEX] - Remove the element at the specified index from the list\n" + "/replace [<int> INDEX] [<T> ELEMENT] - Replace the element at specified index with the new one\n" + "/replaceAll [<T> OLD] [<T> NEW] - Replace all occurrences of specified element with the new " + "one\n" + "\n" + "/index [<T> ELEMENT] - Get the index of the first specified element in the list\n" + "/sort [ascending/descending] - Sort the list in ascending or descending order\n" + "/frequency - The frequency count of each element in the list\n" + "/print [<int> INDEX] - Print the element at the specified index in the list\n" + "/printAll [asList/lineByLine/oneLine] - Print all elements in the list in specified format\n" + "/getRandom - Get a random element from the list\n" + "/count [<T> ELEMENT] - Count the number of occurrences of the specified element in the list\n" + "/size - Get the number of elements in the list\n" + "/equals [<int> INDEX1] [<int> INDEX2] - Check if two elements are equal\n" + "/clear - Remove all elements from the list\n" + "/compare [<int> INDEX1] [<int> INDEX2] Compare elements at the specified indices in the list\n" + "/mirror - Mirror elements' positions in list\n" + "/unique - Unique elements in the list\n" + "/readFile [<string> FILENAME] - Import data from the specified file and add it to the list\n" + "/writeFile [<string> FILENAME] - Export the list data to the specified file");
-        System.out.println("===================================================================================================================\n" + "Word-specific commands:\n" + "===================================================================================================================\n" + "/concat [<int> INDEX1] [<int> INDEX2] Concatenate two specified strings\n" + "/swapCase [<int> INDEX] Output swapped case version of the specified string\n" + "/upper [<int> INDEX] Output uppercase version of the specified string\n" + "/lower [<int> INDEX] Output lowercase version of the specified string\n" + "/reverse [<int> INDEX] Output reversed version of the specified string\n" + "/length [<int> INDEX] Get the length of the specified string\n" + "/join [<string> DELIMITER] Join all the strings with the specified delimiter\n" + "/regex [<string> PATTERN] Search for all elements that match the specified regular expression " + "pattern\n" + "===================================================================================================================");
+        System.out.println("""
+                ===================================================================================================================
+                Usage: COMMAND [<TYPE> PARAMETERS]
+                ===================================================================================================================
+                General commands:
+                ===================================================================================================================
+                /help - Display this help message
+                /menu - Return to the menu
+                
+                /add [<T> ELEMENT] - Add the specified element to the list
+                /remove [<int> INDEX] - Remove the element at the specified index from the list
+                /replace [<int> INDEX] [<T> ELEMENT] - Replace the element at specified index with the new one
+                /replaceAll [<T> OLD] [<T> NEW] - Replace all occurrences of specified element with the new one
+                
+                /index [<T> ELEMENT] - Get the index of the first specified element in the list
+                /sort [ascending/descending] - Sort the list in ascending or descending order
+                /frequency - The frequency count of each element in the list
+                /print [<int> INDEX] - Print the element at the specified index in the list
+                /printAll [asList/lineByLine/oneLine] - Print all elements in the list in specified format
+                /getRandom - Get a random element from the list
+                /count [<T> ELEMENT] - Count the number of occurrences of the specified element in the list
+                /size - Get the number of elements in the list
+                /equals [<int> INDEX1] [<int> INDEX2] - Check if two elements are equal
+                /clear - Remove all elements from the list
+                /compare [<int> INDEX1] [<int> INDEX2] Compare elements at the specified indices in the list
+                /mirror - Mirror elements' positions in list
+                /unique - Unique elements in the list
+                /readFile [<string> FILENAME] - Import data from the specified file and add it to the list
+                /writeFile [<string> FILENAME] - Export the list data to the specified file""");
+        System.out.println("""
+                ===================================================================================================================
+                Word-specific commands:
+                ===================================================================================================================
+                /concat [<int> INDEX1] [<int> INDEX2] Concatenate two specified strings
+                /swapCase [<int> INDEX] Output swapped case version of the specified string
+                /upper [<int> INDEX] Output uppercase version of the specified string
+                /lower [<int> INDEX] Output lowercase version of the specified string
+                /reverse [<int> INDEX] Output reversed version of the specified string
+                /length [<int> INDEX] Get the length of the specified string
+                /join [<string> DELIMITER] Join all the strings with the specified delimiter
+                /regex [<string> PATTERN] Search for all elements that match the specified regular expression pattern
+                ===================================================================================================================""");
     }
 
     void menu() {
